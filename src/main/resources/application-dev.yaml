@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  # 数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bbs
+    username: root
+    password: root
+
+  # thymeleaf
+  thymeleaf:
+    cache: false
+
+  # jpa
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+# Mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.tragoedia.bbs.entity
+  configuration:
+    use-generated-keys: true # 自动生成主键
+    map-underscore-to-camel-case: true # 下划线转驼峰
+
