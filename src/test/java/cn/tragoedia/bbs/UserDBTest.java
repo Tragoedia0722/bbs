@@ -3,14 +3,14 @@ package cn.tragoedia.bbs;
 import cn.tragoedia.bbs.entity.User;
 import cn.tragoedia.bbs.repository.UserRepository;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import javax.annotation.Resource;
 import java.util.Date;
 
 @SpringBootTest
 public class UserDBTest {
-    @Autowired
+    @Resource
     private UserRepository userRepository;
 
     @Test
@@ -26,7 +26,7 @@ public class UserDBTest {
     }
 
     @Test
-    public void insert_user() {
+    public void test_insert_user() {
         User user = new User();
         user.setUsername("test");
         user.setPassword("123456");
@@ -40,7 +40,7 @@ public class UserDBTest {
     }
 
     @Test
-    public void update_user() {
+    public void test_update_user() {
         int i = userRepository.updateStatusById(150, 1);
         System.out.println(i);
 
