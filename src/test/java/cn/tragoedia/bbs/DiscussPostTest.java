@@ -25,7 +25,7 @@ public class DiscussPostTest {
         discussPost.setScore(10);
         discussPost.setStatus(1);
         discussPost.setTitle("title");
-        discussPost.setUserId(1);
+        discussPost.setUserId(2);
         DiscussPost save = discussPostRepository.save(discussPost);
         System.out.println(save);
     }
