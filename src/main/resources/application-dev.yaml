@@ -19,11 +19,36 @@ spring:
     hibernate:
       ddl-auto: update
 
-# Mybatis
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.tragoedia.bbs.entity
-  configuration:
-    use-generated-keys: true # 自动生成主键
-    map-underscore-to-camel-case: true # 下划线转驼峰
+  # 邮箱
+  mail:
+    host: smtp.exmail.qq.com
+    protocol: smtps
+    port: 465
+    nickname: Tragoedia.cn
+    username: account@tragoedia.cn
+    password: Hyxadjlsksk1999
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
 
+## Mybatis
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.tragoedia.bbs.entity
+#  configuration:
+#    use-generated-keys: true # 自动生成主键
+#    map-underscore-to-camel-case: true # 下划线转驼峰
+
+# 日志
+logging:
+  file:
+    name: D:/bbs.log
+  level:
+    root: warn
+    org.springframework.web: debug
+    org.hibernate: error
+  logback:
+    rollingpolicy:
+      max-file-size: 5MB

@@ -3,6 +3,8 @@ package cn.tragoedia.bbs;
 import cn.tragoedia.bbs.entity.User;
 import cn.tragoedia.bbs.repository.UserRepository;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
@@ -27,6 +29,8 @@ public class UserDBTest {
 
     @Test
     public void test_insert_user() {
+        final Logger logger = LoggerFactory.getLogger(UserDBTest.class);
+
         User user = new User();
         user.setUsername("test");
         user.setPassword("123456");
@@ -34,6 +38,8 @@ public class UserDBTest {
         user.setEmail("test@qq.com");
         user.setHeaderUrl("http://www.newcoder.com/101.png");
         user.setCreateTime(new Date());
+
+        logger.debug("this is a test");
 
         User save = userRepository.save(user);
         System.out.println(save);
