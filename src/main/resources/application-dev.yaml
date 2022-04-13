@@ -1,5 +1,7 @@
 server:
   port: 8080
+  servlet:
+    context-path:
 
 spring:
   # thymeleaf
@@ -24,10 +26,16 @@ spring:
 logging:
   file:
     name: D:/bbs.log
-  level:
-    root: warn
-    org.springframework.web: debug
-    org.hibernate: error
+#  level:
+#    root: warn
+#    org.springframework.web: debug
+#    org.hibernate: error
   logback:
     rollingpolicy:
       max-file-size: 5MB
+
+# 自定义bbs
+bbs:
+  path:
+    domain:
+      http://localhost:8080

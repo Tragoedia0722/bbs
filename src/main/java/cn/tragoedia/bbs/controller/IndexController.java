@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class HomeController {
+public class IndexController {
     @Resource
     private DiscussPostService discussPostService;
 

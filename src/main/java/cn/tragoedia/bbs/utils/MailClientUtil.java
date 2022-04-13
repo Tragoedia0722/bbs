@@ -13,8 +13,8 @@ import javax.mail.internet.MimeMessage;
 
 
 @Component
-public class MailClient {
-    private final static Logger logger = LoggerFactory.getLogger(MailClient.class);
+public class MailClientUtil {
+    private final static Logger logger = LoggerFactory.getLogger(MailClientUtil.class);
 
     @Resource
     private JavaMailSender javaMailSender;

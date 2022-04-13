@@ -1,6 +1,6 @@
 package cn.tragoedia.bbs;
 
-import cn.tragoedia.bbs.utils.MailClient;
+import cn.tragoedia.bbs.utils.MailClientUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -9,10 +9,10 @@ import javax.annotation.Resource;
 @SpringBootTest
 public class MailTest {
     @Resource
-    private MailClient mailClient;
+    private MailClientUtil mailClientUtil;
 
     @Test
     public void send() {
-        mailClient.sendMail("407172162@qq.com", "test3", "<h1>Hello</h1>");
+        mailClientUtil.sendMail("407172162@qq.com", "test3", "<h1>Hello</h1>");
     }
 }

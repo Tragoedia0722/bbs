@@ -2,6 +2,8 @@ package cn.tragoedia.bbs.service;
 
 import cn.tragoedia.bbs.entity.User;
 
+import java.util.Map;
+
 public interface UserService {
     User findUserById(int id);
 
@@ -14,4 +16,8 @@ public interface UserService {
     int updateHeaderById(int id, String headerUrl);
 
     int updatePasswordById(int id, String password);
+
+    Map<String, Object> register(User user);
+
+    int activation(int id, String code);
 }
