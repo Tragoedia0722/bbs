@@ -2,13 +2,6 @@ server:
   port: 8080
 
 spring:
-  # 数据源
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/bbs
-    username: root
-    password: root
-
   # thymeleaf
   thymeleaf:
     cache: false
@@ -18,20 +11,6 @@ spring:
     show-sql: false
     hibernate:
       ddl-auto: update
-
-  # 邮箱
-  mail:
-    host: smtp.exmail.qq.com
-    protocol: smtps
-    port: 465
-    nickname: Tragoedia.cn
-    username: account@tragoedia.cn
-    password: Hyxadjlsksk1999
-    properties:
-      mail:
-        smtp:
-          ssl:
-            enable: true
 
 ## Mybatis
 #mybatis:

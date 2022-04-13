@@ -1,0 +1,21 @@
+spring:
+  # 数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: # 数据库地址
+    username: # 账户
+    password: # 密码
+
+  # 邮箱
+  mail:
+    host: # 服务主机
+    protocol: smtps
+    port: 465
+    nickname: Tragoedia.cn
+    username: # 账户
+    password: # 密码
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true

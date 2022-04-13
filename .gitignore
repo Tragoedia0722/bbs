@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### 连接配置文件 ###
+application-conn.yaml
