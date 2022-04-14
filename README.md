@@ -1,6 +1,7 @@
 # 社区论坛
 
-## 实现功能
+## 功能实现
+注册
 springboot+jpa+thymeleaf
 
 springboot
