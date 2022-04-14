@@ -1,4 +1,4 @@
-# bbs
+# 论坛
 springboot+jpa+thymeleaf
 
 springboot
