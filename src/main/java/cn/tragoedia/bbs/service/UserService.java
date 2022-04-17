@@ -11,6 +11,8 @@ public interface UserService {
 
     User findUserByEmail(String email);
 
+    User insertUser(User user);
+
     int updateStatusById(int id, int status);
 
     int updateHeaderById(int id, String headerUrl);

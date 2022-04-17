@@ -48,6 +48,11 @@ public class UserServiceImpl implements UserService, Constant {
     }
 
     @Override
+    public User insertUser(User user) {
+        return userRepository.save(user);
+    }
+
+    @Override
     public int updateStatusById(int id, int status) {
         return userRepository.updateStatusById(id, status);
     }
