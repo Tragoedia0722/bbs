@@ -1,6 +1,8 @@
 package cn.tragoedia.bbs.service.impl;
 
+import cn.tragoedia.bbs.entity.LoginTicket;
 import cn.tragoedia.bbs.entity.User;
+import cn.tragoedia.bbs.repository.LoginTicketRepository;
 import cn.tragoedia.bbs.repository.UserRepository;
 import cn.tragoedia.bbs.service.UserService;
 import cn.tragoedia.bbs.utils.CommonUtil;
@@ -25,6 +27,8 @@ public class UserServiceImpl implements UserService, Constant {
     private MailClientUtil mailClientUtil;
     @Resource
     private TemplateEngine templateEngine;
+    @Resource
+    private LoginTicketRepository loginTicketRepository;
 
     @Value("${bbs.path.domain}")
     private String domain;
@@ -128,5 +132,50 @@ public class UserServiceImpl implements UserService, Constant {
         } else {
             return ACTIVATION_FAILURE;
         }
+    }
+
+    @Override
+    public Map<String, Object> login(String username, String password, int expired) {
+        Map<String, Object> map = new HashMap<>();
+        // 验证空值
+        if (StringUtils.isBlank(username)) {
+            map.put("usernameMsg", "账号不能为空");
+            return map;
+        }
+        if (StringUtils.isBlank(password)) {
+            map.put("passwordMsg", "密码不能为空");
+            return map;
+        }
+        // 查询账号
+        User user = userRepository.findUserByUsername(username);
+        if (user == null) {
+            map.put("usernameMsg", "账号不存在");
+            return map;
+        }
+        // 验证状态
+        if (user.getStatus() == 0) {
+            map.put("usernameMsg", "账号未激活");
+            return map;
+        }
+        // 验证密码
+        if (!user.getPassword().equals(CommonUtil.md5(password + user.getSalt()))) {
+            map.put("passwordMsg", "密码错误");
+            return map;
+        }
+        // 生成凭证
+        LoginTicket loginTicket = new LoginTicket();
+        loginTicket.setUserId(user.getId());
+        loginTicket.setTicket(CommonUtil.generateUUID());
+        loginTicket.setStatus(0);
+        loginTicket.setExpired(new Date(System.currentTimeMillis() + expired * 1000));
+        loginTicketRepository.save(loginTicket);
+
+        map.put("ticket", loginTicket.getTicket());
+        return map;
+    }
+
+    @Override
+    public void logout(String ticket) {
+        loginTicketRepository.updateStatusByTicket(ticket, 1);
     }
 }
