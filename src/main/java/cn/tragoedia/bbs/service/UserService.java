@@ -1,5 +1,6 @@
 package cn.tragoedia.bbs.service;
 
+import cn.tragoedia.bbs.entity.LoginTicket;
 import cn.tragoedia.bbs.entity.User;
 
 import java.util.Map;
@@ -26,4 +27,6 @@ public interface UserService {
     Map<String, Object> login(String username, String password, int expired);
 
     void logout(String ticket);
+
+    LoginTicket findLoginTicket(String value);
 }

@@ -34,12 +34,12 @@ public class LoginController implements Constant {
 
     @GetMapping("/register")
     public String getRegisterPage() {
-        return "/site/register";
+        return "site/register";
     }
 
     @GetMapping("/login")
     public String getLoginPage() {
-        return "/site/login";
+        return "site/login";
     }
 
     @PostMapping("/register")
@@ -48,7 +48,7 @@ public class LoginController implements Constant {
         if (registerMap == null || registerMap.isEmpty()) {
             model.addAttribute("msg", "注册成功，已向您的注册邮箱发送了一封激活邮件，请尽快激活。");
             model.addAttribute("target", "/index");
-            return "/site/operate-result";
+            return "site/operate-result";
         } else {
             model.addAttribute("usernameMsg", registerMap.get("usernameMsg"));
             model.addAttribute("passwordMsg", registerMap.get("passwordMsg"));
@@ -70,7 +70,7 @@ public class LoginController implements Constant {
             model.addAttribute("msg", "激活失败！");
             model.addAttribute("target", "/index");
         }
-        return "/site/operate-result";
+        return "site/operate-result";
     }
 
     @GetMapping("/kaptcha")

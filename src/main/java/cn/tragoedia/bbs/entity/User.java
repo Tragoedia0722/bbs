@@ -7,9 +7,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "user")
-@Getter
-@Setter
-@ToString
+@Data
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

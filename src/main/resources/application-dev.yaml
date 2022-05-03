@@ -14,18 +14,11 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL8Dialect
-## Mybatis
-#mybatis:
-#  mapper-locations: classpath:mapper/*.xml
-#  type-aliases-package: com.tragoedia.bbs.entity
-#  configuration:
-#    use-generated-keys: true # 自动生成主键
-#    map-underscore-to-camel-case: true # 下划线转驼峰
 
 # 日志
 logging:
   file:
-    name: D:/bbs.log
+    name: log/bbs.log
   #  level:
   #    root: warn
   #    org.springframework.web: debug

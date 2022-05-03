@@ -43,6 +43,6 @@ public class IndexController {
         // 添加模型
         model.addAttribute("discussPosts", discussPosts);
         // 返回视图
-        return "/index";
+        return "index";
     }
 }

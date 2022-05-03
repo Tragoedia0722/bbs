@@ -10,9 +10,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "login_ticket")
-@Setter
-@Getter
-@ToString
+@Data
 public class LoginTicket {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

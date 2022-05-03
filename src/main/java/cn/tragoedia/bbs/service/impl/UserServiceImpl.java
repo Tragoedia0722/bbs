@@ -107,7 +107,7 @@ public class UserServiceImpl implements UserService, Constant {
         user.setType(0);
         user.setStatus(0);
         user.setActivationCode(CommonUtil.generateUUID());
-        user.setHeaderUrl("");
+        user.setHeaderUrl("http://images.nowcoder.com/head/1t.png");
         user.setCreateTime(new Date());
         userRepository.save(user);
         // 激活邮件
@@ -117,7 +117,6 @@ public class UserServiceImpl implements UserService, Constant {
         context.setVariable("url", url);
         String content = templateEngine.process("/mail/activation", context);
         mailClientUtil.sendMail(user.getEmail(), "账号激活", content);
-
         return registerMap;
     }
 
@@ -167,7 +166,7 @@ public class UserServiceImpl implements UserService, Constant {
         loginTicket.setUserId(user.getId());
         loginTicket.setTicket(CommonUtil.generateUUID());
         loginTicket.setStatus(0);
-        loginTicket.setExpired(new Date(System.currentTimeMillis() + expired * 1000));
+        loginTicket.setExpired(new Date(System.currentTimeMillis() + expired * 1000L));
         loginTicketRepository.save(loginTicket);
 
         map.put("ticket", loginTicket.getTicket());
@@ -177,5 +176,10 @@ public class UserServiceImpl implements UserService, Constant {
     @Override
     public void logout(String ticket) {
         loginTicketRepository.updateStatusByTicket(ticket, 1);
+    }
+
+    @Override
+    public LoginTicket findLoginTicket(String value) {
+        return loginTicketRepository.findLoginTicketByTicket(value);
     }
 }

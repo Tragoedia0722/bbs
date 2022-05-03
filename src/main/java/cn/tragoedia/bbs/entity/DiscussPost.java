@@ -1,17 +1,13 @@
 package cn.tragoedia.bbs.entity;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "discuss_post")
-@Getter
-@Setter
-@ToString
+@Data
 public class DiscussPost {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
