@@ -29,4 +29,8 @@ public interface UserService {
     void logout(String ticket);
 
     LoginTicket findLoginTicket(String value);
+
+    int updateHeader(int userId, String headerUrl);
+
+    Map<String, Object> updatePassword(int userId, String oldPassword, String newPassword);
 }

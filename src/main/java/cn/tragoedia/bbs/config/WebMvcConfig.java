@@ -12,10 +12,15 @@ import javax.annotation.Resource;
 public class WebMvcConfig implements WebMvcConfigurer {
     @Resource
     private LoginTicketInterceptor loginTicketInterceptor;
+    @Resource
+    private HandlerInterceptor loginRequiredInterceptor;
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginTicketInterceptor)
+                .excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpeg", "/**/*.jpg");
+
+        registry.addInterceptor(loginRequiredInterceptor)
                 .excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpeg", "/**/*.jpg");
     }
 }

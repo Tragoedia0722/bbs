@@ -182,4 +182,37 @@ public class UserServiceImpl implements UserService, Constant {
     public LoginTicket findLoginTicket(String value) {
         return loginTicketRepository.findLoginTicketByTicket(value);
     }
+
+    @Override
+    public int updateHeader(int userId, String headerUrl) {
+        return userRepository.updateHeaderById(userId, headerUrl);
+    }
+
+    public Map<String, Object> updatePassword(int userId, String oldPassword, String newPassword) {
+        Map<String, Object> map = new HashMap<>();
+
+        // 空值处理
+        if (StringUtils.isBlank(oldPassword)) {
+            map.put("oldPasswordMsg", "原密码不能为空!");
+            return map;
+        }
+        if (StringUtils.isBlank(newPassword)) {
+            map.put("newPasswordMsg", "新密码不能为空!");
+            return map;
+        }
+
+        // 验证原始密码
+        User user = userRepository.findUserById(userId);
+        oldPassword = CommonUtil.md5(oldPassword + user.getSalt());
+        if (!user.getPassword().equals(oldPassword)) {
+            map.put("oldPasswordMsg", "原密码输入有误!");
+            return map;
+        }
+
+        // 更新密码
+        newPassword = CommonUtil.md5(newPassword + user.getSalt());
+        userRepository.updatePasswordById(userId, newPassword);
+
+        return map;
+    }
 }

@@ -42,6 +42,17 @@ public class LoginController implements Constant {
         return "site/login";
     }
 
+    @GetMapping("/forget")
+    public String getForgetPage() {
+        return "site/forget";
+    }
+
+    @PostMapping("reset")
+    public String reset() {
+        // todo 未完成
+        return null;
+    }
+
     @PostMapping("/register")
     public String register(Model model, User user) {
         Map<String, Object> registerMap = userService.register(user);
