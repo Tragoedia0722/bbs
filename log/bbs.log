@@ -198,3 +198,604 @@
 2022-05-15 16:09:03.338  INFO 6048 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-05-15 16:09:03.342  INFO 6048 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-05-15 16:09:03.356  INFO 6048 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-15 20:29:44.160  INFO 3568 --- [main] cn.tragoedia.bbs.SmokeTest               : Starting SmokeTest using Java 1.8.0_322 on DESKTOP-0JEE87I with PID 3568 (started by Tragoedia in J:\Traogedia.cn\bbs)
+2022-05-15 20:29:44.161  INFO 3568 --- [main] cn.tragoedia.bbs.SmokeTest               : The following 2 profiles are active: "conn", "dev"
+2022-05-15 20:29:45.572  INFO 3568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 20:29:45.577  INFO 3568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 20:29:45.777  INFO 3568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 190 ms. Found 3 JPA repository interfaces.
+2022-05-15 20:29:45.800  INFO 3568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 20:29:45.801  INFO 3568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-15 20:29:45.818  INFO 3568 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.DiscussPostRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 20:29:45.819  INFO 3568 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.LoginTicketRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 20:29:45.820  INFO 3568 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 20:29:45.821  INFO 3568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-05-15 20:29:46.774  INFO 3568 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 20:29:46.845  INFO 3568 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-15 20:29:47.053  INFO 3568 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 20:29:47.633  INFO 3568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 20:29:47.821  INFO 3568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 20:29:47.842  INFO 3568 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-15 20:29:48.606  INFO 3568 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 20:29:48.616  INFO 3568 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 20:29:49.898  WARN 3568 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 20:29:50.337  INFO 3568 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-15 20:29:51.221  INFO 3568 --- [main] cn.tragoedia.bbs.SmokeTest               : Started SmokeTest in 7.642 seconds (JVM running for 9.076)
+2022-05-15 20:29:51.362  INFO 3568 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 20:29:51.365  INFO 3568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-15 20:29:51.380  INFO 3568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-15 20:30:16.015  INFO 3324 --- [main] cn.tragoedia.bbs.SmokeTest               : Starting SmokeTest using Java 1.8.0_322 on DESKTOP-0JEE87I with PID 3324 (started by Tragoedia in J:\Traogedia.cn\bbs)
+2022-05-15 20:30:16.017  INFO 3324 --- [main] cn.tragoedia.bbs.SmokeTest               : The following 2 profiles are active: "conn", "dev"
+2022-05-15 20:30:16.821  INFO 3324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 20:30:16.823  INFO 3324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 20:30:17.013  INFO 3324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 179 ms. Found 3 JPA repository interfaces.
+2022-05-15 20:30:17.032  INFO 3324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 20:30:17.034  INFO 3324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-15 20:30:17.048  INFO 3324 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.DiscussPostRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 20:30:17.049  INFO 3324 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.LoginTicketRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 20:30:17.050  INFO 3324 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 20:30:17.051  INFO 3324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-05-15 20:30:17.935  INFO 3324 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 20:30:18.002  INFO 3324 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-15 20:30:18.209  INFO 3324 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 20:30:18.793  INFO 3324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 20:30:18.982  INFO 3324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 20:30:19.009  INFO 3324 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-15 20:30:19.795  INFO 3324 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 20:30:19.805  INFO 3324 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 20:30:21.534  WARN 3324 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 20:30:21.964  INFO 3324 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-15 20:30:22.891  INFO 3324 --- [main] cn.tragoedia.bbs.SmokeTest               : Started SmokeTest in 7.283 seconds (JVM running for 8.94)
+2022-05-15 20:30:23.030  INFO 3324 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 20:30:23.033  INFO 3324 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-15 20:30:23.048  INFO 3324 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-15 20:31:03.865  INFO 13860 --- [main] cn.tragoedia.bbs.SmokeTest               : Starting SmokeTest using Java 1.8.0_322 on DESKTOP-0JEE87I with PID 13860 (started by Tragoedia in J:\Traogedia.cn\bbs)
+2022-05-15 20:31:03.867  INFO 13860 --- [main] cn.tragoedia.bbs.SmokeTest               : The following 2 profiles are active: "conn", "dev"
+2022-05-15 20:31:04.735  INFO 13860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 20:31:04.737  INFO 13860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 20:31:04.936  INFO 13860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 189 ms. Found 3 JPA repository interfaces.
+2022-05-15 20:31:04.956  INFO 13860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 20:31:04.958  INFO 13860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-15 20:31:04.973  INFO 13860 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.DiscussPostRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 20:31:04.974  INFO 13860 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.LoginTicketRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 20:31:04.975  INFO 13860 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 20:31:04.975  INFO 13860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2022-05-15 20:31:05.873  INFO 13860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 20:31:05.940  INFO 13860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-15 20:31:06.133  INFO 13860 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 20:31:06.706  INFO 13860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 20:31:06.895  INFO 13860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 20:31:06.917  INFO 13860 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-15 20:31:07.674  INFO 13860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 20:31:07.686  INFO 13860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 20:31:08.952  WARN 13860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 20:31:09.328  INFO 13860 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-15 20:31:10.259  INFO 13860 --- [main] cn.tragoedia.bbs.SmokeTest               : Started SmokeTest in 7.088 seconds (JVM running for 8.776)
+2022-05-15 20:31:10.413  INFO 13860 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 20:31:10.419  INFO 13860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-15 20:31:10.437  INFO 13860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-15 21:01:18.421  INFO 16752 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : Starting MainApplication using Java 1.8.0_322 on DESKTOP-0JEE87I with PID 16752 (J:\Traogedia.cn\bbs\target\classes started by Tragoedia in J:\Traogedia.cn\bbs)
+2022-05-15 21:01:18.422  INFO 16752 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : The following 2 profiles are active: "conn", "dev"
+2022-05-15 21:01:18.492  INFO 16752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-15 21:01:18.493  INFO 16752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-15 21:01:19.559  INFO 16752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 21:01:19.560  INFO 16752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 21:01:19.645  INFO 16752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 3 JPA repository interfaces.
+2022-05-15 21:01:19.663  INFO 16752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 21:01:19.664  INFO 16752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-15 21:01:19.680  INFO 16752 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.DiscussPostRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:01:19.681  INFO 16752 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.LoginTicketRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:01:19.685  INFO 16752 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:01:19.685  INFO 16752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-05-15 21:01:20.651  INFO 16752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-15 21:01:20.662  INFO 16752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 21:01:20.663  INFO 16752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-15 21:01:20.793  INFO 16752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 21:01:20.794  INFO 16752 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2300 ms
+2022-05-15 21:01:21.113  INFO 16752 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 21:01:21.167  INFO 16752 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-15 21:01:21.323  INFO 16752 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 21:01:21.437  INFO 16752 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 21:01:21.565  INFO 16752 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 21:01:21.578  INFO 16752 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-15 21:01:22.343  INFO 16752 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 21:01:22.354  INFO 16752 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 21:01:23.584  WARN 16752 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 21:01:24.012  INFO 16752 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-15 21:01:24.724  INFO 16752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-15 21:01:24.767  INFO 16752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-15 21:01:24.777  INFO 16752 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : Started MainApplication in 6.925 seconds (JVM running for 8.507)
+2022-05-15 21:01:29.420  INFO 16752 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 21:01:29.423  INFO 16752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-15 21:01:29.431  INFO 16752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-15 21:02:42.702  INFO 132 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : Starting MainApplication using Java 1.8.0_322 on DESKTOP-0JEE87I with PID 132 (J:\Traogedia.cn\bbs\target\classes started by Tragoedia in J:\Traogedia.cn\bbs)
+2022-05-15 21:02:42.703  INFO 132 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : The following 2 profiles are active: "conn", "dev"
+2022-05-15 21:02:42.757  INFO 132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-15 21:02:42.758  INFO 132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-15 21:02:43.518  INFO 132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 21:02:43.519  INFO 132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 21:02:43.601  INFO 132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 3 JPA repository interfaces.
+2022-05-15 21:02:43.619  INFO 132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 21:02:43.621  INFO 132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-15 21:02:43.640  INFO 132 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.DiscussPostRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:02:43.641  INFO 132 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.LoginTicketRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:02:43.642  INFO 132 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:02:43.642  INFO 132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-05-15 21:02:44.480  INFO 132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-15 21:02:44.492  INFO 132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 21:02:44.492  INFO 132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-15 21:02:44.593  INFO 132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 21:02:44.593  INFO 132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1834 ms
+2022-05-15 21:02:44.866  INFO 132 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 21:02:44.919  INFO 132 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-15 21:02:45.079  INFO 132 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 21:02:45.193  INFO 132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 21:02:45.331  INFO 132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 21:02:45.347  INFO 132 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-15 21:02:45.961  INFO 132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 21:02:45.971  INFO 132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 21:02:46.678  WARN 132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 21:02:46.911  INFO 132 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-15 21:02:47.549  INFO 132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-15 21:02:47.591  INFO 132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-15 21:02:47.601  INFO 132 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : Started MainApplication in 5.389 seconds (JVM running for 6.525)
+2022-05-15 21:05:07.063  INFO 132 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 21:05:07.063  INFO 132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 21:05:07.064  INFO 132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 21:05:07.083  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:05:07.194  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[111]ms
+2022-05-15 21:05:07.194  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:05:07.200  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[6]ms
+2022-05-15 21:05:07.245  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[countOfDiscussPosts]，参数[]
+2022-05-15 21:05:07.260  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[countOfDiscussPosts]结束，共计用时[15]ms
+2022-05-15 21:05:07.260  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findAllDiscussPosts]，参数[0, 10]
+2022-05-15 21:05:07.272  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findAllDiscussPosts]结束，共计用时[12]ms
+2022-05-15 21:05:07.273  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[11]
+2022-05-15 21:05:07.274  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:05:07.274  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[111]
+2022-05-15 21:05:07.276  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:07.276  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:05:07.278  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:07.279  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:05:07.280  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:05:07.281  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:05:07.282  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:05:07.282  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[146]
+2022-05-15 21:05:07.284  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:07.284  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[145]
+2022-05-15 21:05:07.286  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:07.287  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[111]
+2022-05-15 21:05:07.289  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:07.290  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[138]
+2022-05-15 21:05:07.292  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:07.292  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[138]
+2022-05-15 21:05:07.294  INFO 132 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:17.978  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:05:17.981  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[4]ms
+2022-05-15 21:05:17.982  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:05:17.984  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:17.985  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[countOfDiscussPosts]，参数[]
+2022-05-15 21:05:17.989  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[countOfDiscussPosts]结束，共计用时[4]ms
+2022-05-15 21:05:17.989  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findAllDiscussPosts]，参数[0, 10]
+2022-05-15 21:05:17.994  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findAllDiscussPosts]结束，共计用时[5]ms
+2022-05-15 21:05:17.994  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[11]
+2022-05-15 21:05:17.996  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:17.997  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[111]
+2022-05-15 21:05:17.999  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:17.999  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:05:18.001  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:18.002  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:05:18.003  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:05:18.004  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:05:18.006  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:18.006  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[146]
+2022-05-15 21:05:18.008  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:18.008  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[145]
+2022-05-15 21:05:18.010  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:18.010  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[111]
+2022-05-15 21:05:18.011  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:05:18.011  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[138]
+2022-05-15 21:05:18.013  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:18.013  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[138]
+2022-05-15 21:05:18.015  INFO 132 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:05:25.070  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:05:25.073  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[3]ms
+2022-05-15 21:05:25.073  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:05:25.075  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:25.076  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[countOfDiscussPosts]，参数[]
+2022-05-15 21:05:25.078  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[countOfDiscussPosts]结束，共计用时[2]ms
+2022-05-15 21:05:25.078  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findAllDiscussPosts]，参数[0, 10]
+2022-05-15 21:05:25.084  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findAllDiscussPosts]结束，共计用时[5]ms
+2022-05-15 21:05:25.084  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[11]
+2022-05-15 21:05:25.085  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:05:25.086  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[111]
+2022-05-15 21:05:25.087  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:05:25.088  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:05:25.091  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[3]ms
+2022-05-15 21:05:25.091  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:05:25.093  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:25.093  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:05:25.095  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:25.095  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[146]
+2022-05-15 21:05:25.098  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[3]ms
+2022-05-15 21:05:25.098  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[145]
+2022-05-15 21:05:25.102  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[4]ms
+2022-05-15 21:05:25.102  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[111]
+2022-05-15 21:05:25.104  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:25.104  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[138]
+2022-05-15 21:05:25.106  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:05:25.106  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[138]
+2022-05-15 21:05:25.108  INFO 132 --- [http-nio-8080-exec-2] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:06:50.226  INFO 132 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 21:06:50.229  INFO 132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-15 21:06:50.236  INFO 132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-15 21:06:56.622  INFO 17704 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : Starting MainApplication using Java 1.8.0_322 on DESKTOP-0JEE87I with PID 17704 (J:\Traogedia.cn\bbs\target\classes started by Tragoedia in J:\Traogedia.cn\bbs)
+2022-05-15 21:06:56.623  INFO 17704 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : The following 2 profiles are active: "conn", "dev"
+2022-05-15 21:06:56.686  INFO 17704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-15 21:06:56.687  INFO 17704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-15 21:06:57.362  INFO 17704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 21:06:57.362  INFO 17704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 21:06:57.426  INFO 17704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2022-05-15 21:06:57.441  INFO 17704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 21:06:57.441  INFO 17704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-15 21:06:57.454  INFO 17704 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.DiscussPostRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:06:57.455  INFO 17704 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.LoginTicketRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:06:57.456  INFO 17704 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:06:57.456  INFO 17704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-05-15 21:06:58.104  INFO 17704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-15 21:06:58.113  INFO 17704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 21:06:58.114  INFO 17704 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-15 21:06:58.199  INFO 17704 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 21:06:58.200  INFO 17704 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1513 ms
+2022-05-15 21:06:58.447  INFO 17704 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 21:06:58.487  INFO 17704 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-15 21:06:58.610  INFO 17704 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 21:06:58.703  INFO 17704 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 21:06:58.815  INFO 17704 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 21:06:58.829  INFO 17704 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-15 21:06:59.356  INFO 17704 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 21:06:59.365  INFO 17704 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 21:07:00.004  WARN 17704 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 21:07:00.209  INFO 17704 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-15 21:07:00.755  INFO 17704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-15 21:07:00.793  INFO 17704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-15 21:07:00.802  INFO 17704 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : Started MainApplication in 4.616 seconds (JVM running for 5.637)
+2022-05-15 21:07:06.506  INFO 17704 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 21:07:06.507  INFO 17704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 21:07:06.508  INFO 17704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 21:07:06.526  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:07:06.604  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[78]ms
+2022-05-15 21:07:06.604  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:07:06.608  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[4]ms
+2022-05-15 21:07:06.627  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[countOfDiscussPosts]，参数[]
+2022-05-15 21:07:06.638  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[countOfDiscussPosts]结束，共计用时[11]ms
+2022-05-15 21:07:06.638  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findAllDiscussPosts]，参数[0, 10]
+2022-05-15 21:07:06.653  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findAllDiscussPosts]结束，共计用时[15]ms
+2022-05-15 21:07:06.653  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[11]
+2022-05-15 21:07:06.655  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:07:06.655  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[111]
+2022-05-15 21:07:06.657  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:07:06.657  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:07:06.659  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:07:06.659  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:07:06.660  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:07:06.661  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:07:06.662  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:07:06.663  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[146]
+2022-05-15 21:07:06.664  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:07:06.665  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[145]
+2022-05-15 21:07:06.666  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:07:06.667  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[111]
+2022-05-15 21:07:06.668  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:07:06.668  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[138]
+2022-05-15 21:07:06.670  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:07:06.670  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[138]
+2022-05-15 21:07:06.671  INFO 17704 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:07:09.983  INFO 17704 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:07:09.986  INFO 17704 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[3]ms
+2022-05-15 21:07:09.987  INFO 17704 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:07:09.989  INFO 17704 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:07:09.991  INFO 17704 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[addDiscussPost]，参数[DiscussPost(id=0, userId=150, title=123, content=123, type=0, status=0, createTime=Sun May 15 21:07:09 CST 2022, commentCount=0, score=0.0)]
+2022-05-15 21:07:10.053  INFO 17704 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[addDiscussPost]结束，共计用时[62]ms
+2022-05-15 21:07:10.142 ERROR 17704 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "discuss/add": Error resolving template [discuss/add], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [discuss/add], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) [thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) [thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_322]
+
+2022-05-15 21:07:10.144 ERROR 17704 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [discuss/add], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [discuss/add], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_322]
+
+2022-05-15 21:07:10.148  INFO 17704 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:07:10.151  INFO 17704 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[3]ms
+2022-05-15 21:07:10.151  INFO 17704 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:07:10.153  INFO 17704 --- [http-nio-8080-exec-6] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:06.209  WARN 17704 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-05-15 21:08:06.211  INFO 17704 --- [http-nio-8080-exec-7] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:08:06.216  INFO 17704 --- [http-nio-8080-exec-7] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[6]ms
+2022-05-15 21:08:06.217  INFO 17704 --- [http-nio-8080-exec-7] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:08:06.219  INFO 17704 --- [http-nio-8080-exec-7] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[3]ms
+2022-05-15 21:08:06.367  INFO 17704 --- [http-nio-8080-exec-8] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:08:06.369  INFO 17704 --- [http-nio-8080-exec-8] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[2]ms
+2022-05-15 21:08:06.369  INFO 17704 --- [http-nio-8080-exec-8] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:08:06.371  INFO 17704 --- [http-nio-8080-exec-8] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:06.373  INFO 17704 --- [http-nio-8080-exec-8] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:08:06.374  INFO 17704 --- [http-nio-8080-exec-8] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[1]ms
+2022-05-15 21:08:06.375  INFO 17704 --- [http-nio-8080-exec-8] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:08:06.376  INFO 17704 --- [http-nio-8080-exec-8] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[1]ms
+2022-05-15 21:08:33.276  INFO 17704 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 21:08:33.279  INFO 17704 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-15 21:08:33.286  INFO 17704 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-15 21:08:39.820  INFO 3280 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : Starting MainApplication using Java 1.8.0_322 on DESKTOP-0JEE87I with PID 3280 (J:\Traogedia.cn\bbs\target\classes started by Tragoedia in J:\Traogedia.cn\bbs)
+2022-05-15 21:08:39.821  INFO 3280 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : The following 2 profiles are active: "conn", "dev"
+2022-05-15 21:08:39.867  INFO 3280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-15 21:08:39.867  INFO 3280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-15 21:08:40.509  INFO 3280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 21:08:40.509  INFO 3280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 21:08:40.578  INFO 3280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2022-05-15 21:08:40.594  INFO 3280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-15 21:08:40.595  INFO 3280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-15 21:08:40.609  INFO 3280 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.DiscussPostRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:08:40.610  INFO 3280 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.LoginTicketRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:08:40.611  INFO 3280 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.tragoedia.bbs.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-15 21:08:40.611  INFO 3280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2022-05-15 21:08:41.292  INFO 3280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-15 21:08:41.301  INFO 3280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 21:08:41.301  INFO 3280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-15 21:08:41.392  INFO 3280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 21:08:41.393  INFO 3280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1525 ms
+2022-05-15 21:08:41.596  INFO 3280 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 21:08:41.639  INFO 3280 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-15 21:08:41.752  INFO 3280 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 21:08:41.837  INFO 3280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 21:08:41.960  INFO 3280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 21:08:41.974  INFO 3280 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-15 21:08:42.578  INFO 3280 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 21:08:42.588  INFO 3280 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 21:08:43.340  WARN 3280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 21:08:43.541  INFO 3280 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-15 21:08:44.151  INFO 3280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-15 21:08:44.187  INFO 3280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-15 21:08:44.196  INFO 3280 --- [restartedMain] cn.tragoedia.bbs.MainApplication         : Started MainApplication in 4.867 seconds (JVM running for 6.035)
+2022-05-15 21:08:48.167  INFO 3280 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 21:08:48.167  INFO 3280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 21:08:48.168  INFO 3280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 21:08:48.186  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:08:48.265  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[79]ms
+2022-05-15 21:08:48.265  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:08:48.270  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[5]ms
+2022-05-15 21:08:48.293  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[countOfDiscussPosts]，参数[]
+2022-05-15 21:08:48.305  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[countOfDiscussPosts]结束，共计用时[12]ms
+2022-05-15 21:08:48.305  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findAllDiscussPosts]，参数[0, 10]
+2022-05-15 21:08:48.320  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findAllDiscussPosts]结束，共计用时[14]ms
+2022-05-15 21:08:48.320  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[11]
+2022-05-15 21:08:48.322  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:48.322  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[111]
+2022-05-15 21:08:48.324  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:48.324  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:08:48.326  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:48.326  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:08:48.328  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:48.329  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:08:48.331  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:48.331  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[149]
+2022-05-15 21:08:48.333  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:48.333  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[146]
+2022-05-15 21:08:48.335  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:48.335  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[145]
+2022-05-15 21:08:48.337  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:48.337  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[111]
+2022-05-15 21:08:48.339  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:48.339  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[138]
+2022-05-15 21:08:48.341  INFO 3280 --- [http-nio-8080-exec-1] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:51.584  INFO 3280 --- [http-nio-8080-exec-5] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:08:51.588  INFO 3280 --- [http-nio-8080-exec-5] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[4]ms
+2022-05-15 21:08:51.589  INFO 3280 --- [http-nio-8080-exec-5] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:08:51.591  INFO 3280 --- [http-nio-8080-exec-5] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:08:51.593  INFO 3280 --- [http-nio-8080-exec-5] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[addDiscussPost]，参数[DiscussPost(id=0, userId=150, title=123, content=123, type=0, status=0, createTime=Sun May 15 21:08:51 CST 2022, commentCount=0, score=0.0)]
+2022-05-15 21:08:51.646  INFO 3280 --- [http-nio-8080-exec-5] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[addDiscussPost]结束，共计用时[53]ms
+2022-05-15 21:08:51.654 ERROR 3280 --- [http-nio-8080-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-5] Exception processing template "discuss/add": Error resolving template [discuss/add], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [discuss/add], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) [thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) [thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_322]
+
+2022-05-15 21:08:51.656 ERROR 3280 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [discuss/add], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [discuss/add], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_322]
+
+2022-05-15 21:08:51.660  INFO 3280 --- [http-nio-8080-exec-5] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findLoginTicket]，参数[0a3ce04531ec4bd9868d36b035facb0e]
+2022-05-15 21:08:51.663  INFO 3280 --- [http-nio-8080-exec-5] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findLoginTicket]结束，共计用时[3]ms
+2022-05-15 21:08:51.663  INFO 3280 --- [http-nio-8080-exec-5] c.tragoedia.bbs.aspect.ServiceLogAspect  : --> 用户[0:0:0:0:0:0:0:1]，开始执行方法[findUserById]，参数[150]
+2022-05-15 21:08:51.665  INFO 3280 --- [http-nio-8080-exec-5] c.tragoedia.bbs.aspect.ServiceLogAspect  : <-- 用户[0:0:0:0:0:0:0:1]，执行方法[findUserById]结束，共计用时[2]ms
+2022-05-15 21:09:26.155  INFO 3280 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 21:09:26.158  INFO 3280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-15 21:09:26.165  INFO 3280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

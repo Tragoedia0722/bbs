@@ -16,6 +16,6 @@ spring:
     password: # 密码
     properties:
       mail:
-        smtp:
+        smtp: 
           ssl:
             enable: true

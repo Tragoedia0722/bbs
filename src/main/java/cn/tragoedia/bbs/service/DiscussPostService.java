@@ -9,6 +9,8 @@ public interface DiscussPostService {
 
     List<DiscussPost> findAllDiscussPosts(int page, int size);
 
+    DiscussPost addDiscussPost(DiscussPost discussPost);
+
     int countOfDiscussPostsByUserId(int id);
 
     int countOfDiscussPosts();
