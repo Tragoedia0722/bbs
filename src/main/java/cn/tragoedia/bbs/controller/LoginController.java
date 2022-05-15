@@ -8,19 +8,18 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.imageio.ImageIO;
+import javax.naming.Context;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.HashMap;
 import java.util.Map;
 
 @Slf4j
@@ -45,12 +44,6 @@ public class LoginController implements Constant {
     @GetMapping("/forget")
     public String getForgetPage() {
         return "site/forget";
-    }
-
-    @PostMapping("reset")
-    public String reset() {
-        // todo 未完成
-        return null;
     }
 
     @PostMapping("/register")
@@ -122,8 +115,39 @@ public class LoginController implements Constant {
             model.addAttribute("passwordMsg", map.get("passwordMsg"));
             return "site/login";
         }
+    }
 
+    // 获取验证码
+    @GetMapping("/forget/code")
+    @ResponseBody
+    public Map<String, Object> getForgetCode(String email, HttpSession session) {
+        Map<String, Object> forgetCode = userService.getForgetCode(email);
+        Map<String, Object> map = new HashMap<>();
+        Object code = forgetCode.get("code");
 
+        // 保存验证码
+        session.setAttribute("verifyCode", code);
+        map.put("code", 0);
+        return map;
+    }
+
+    // 重置密码
+    @PostMapping("/forget/password")
+    public String resetPassword(String email, String verifyCode, String password, Model model, HttpSession session) {
+        String code = (String) session.getAttribute("verifyCode");
+        if (StringUtils.isBlank(verifyCode) || StringUtils.isBlank(code) || !code.equalsIgnoreCase(verifyCode)) {
+            model.addAttribute("codeMsg", "验证码错误!");
+            return "site/forget";
+        }
+
+        Map<String, Object> map = userService.resetPassword(email, password);
+        if (map.containsKey("user")) {
+            return "redirect:/login";
+        } else {
+            model.addAttribute("emailMsg", map.get("emailMsg"));
+            model.addAttribute("passwordMsg", map.get("passwordMsg"));
+            return "site/forget";
+        }
     }
 
     @GetMapping("/logout")

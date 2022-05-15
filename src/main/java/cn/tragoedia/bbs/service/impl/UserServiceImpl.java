@@ -215,4 +215,53 @@ public class UserServiceImpl implements UserService, Constant {
 
         return map;
     }
+
+    // 重置密码
+    public Map<String, Object> resetPassword(String email, String password) {
+        Map<String, Object> map = new HashMap<>();
+
+        // 空值处理
+        if (StringUtils.isBlank(email)) {
+            map.put("emailMsg", "邮箱不能为空!");
+            return map;
+        }
+        if (StringUtils.isBlank(password)) {
+            map.put("passwordMsg", "密码不能为空!");
+            return map;
+        }
+
+        // 验证邮箱
+        User user = userRepository.findUserByEmail(email);
+        if (user == null) {
+            map.put("emailMsg", "该邮箱尚未注册!");
+            return map;
+        }
+
+        // 重置密码
+        password = CommonUtil.md5(password + user.getSalt());
+        userRepository.updatePasswordById(user.getId(), password);
+
+        map.put("user", user);
+        return map;
+    }
+
+    @Override
+    public Map<String, Object> getForgetCode(String email) {
+        Map<String, Object> map = new HashMap<>();
+        if (StringUtils.isBlank(email)) {
+            map.put("emailMsg", "邮箱不能为空!");
+            return map;
+        }
+
+        // 发送邮件
+        Context context = new Context();
+        context.setVariable("email", email);
+        String code = CommonUtil.generateUUID().substring(0, 4);
+        context.setVariable("verifyCode", code);
+        String content = templateEngine.process("/mail/forget", context);
+        mailClientUtil.sendMail(email, "找回密码", content);
+
+        map.put("code", code);
+        return map;
+    }
 }

@@ -33,4 +33,8 @@ public interface UserService {
     int updateHeader(int userId, String headerUrl);
 
     Map<String, Object> updatePassword(int userId, String oldPassword, String newPassword);
+
+    Map<String, Object> resetPassword(String email, String password);
+
+    Map<String, Object> getForgetCode(String email);
 }
